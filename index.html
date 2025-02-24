@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মেন্স গ্রুমিং ব্র্যান্ডের জন্য ফ্রি সোশ্যাল মিডিয়া অডিট</title>
+    <style>
+        :root {
+            --primary: #FF6B35;
+            --secondary: #2A9D8F;
+        }
+
+        body {
+            font-family: 'Kalpurush', Arial, sans-serif;
+            line-height: 1.5;
+            background: #f8f9fa;
+            color: #2b2d42;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255,107,53,0.3);
+        }
+
+        .form-step {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .form-step:hover {
+            transform: translateY(-3px);
+        }
+
+        .required::after {
+            content: "*";
+            color: #e63946;
+            margin-left: 4px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .checkbox-group, .radio-group {
+            margin: 15px 0;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            padding: 16px 50px;
+            border: none;
+            border-radius: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto;
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button:hover {
+            background: var(--secondary);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(42,157,143,0.4);
+        }
+
+        .psychology-trigger {
+            border-left: 4px solid var(--secondary);
+            padding-left: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #6c757d;
+        }
+
+        /* সাকসেস মেসেজ স্টাইল */
+        .success-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px auto;
+            box-shadow: 0 5px 25px rgba(42,157,143,0.2);
+            text-align: center;
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .success-details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .dashboard-link {
+            color: #2A9D8F;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px dashed;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>🚀 ৩ মিনিটে জেনে নিন আপনার ব্র্যান্ড কেন পাচ্ছে না Expected ROI!</h2>
+        <p>বাংলাদেশের ১২৭টি মেন্স গ্রুমিং ব্র্যান্ডকে সাহায্যকারী বিশেষজ্ঞ টিম</p>
+    </div>
+
+    <form 
+        action="https://sheetdb.io/api/v1/sait1kk78lsvk" 
+        method="POST" 
+        onsubmit="handleSubmit(event)"
+    >
+        <!-- সেকশন ১: ব্যক্তিগত তথ্য -->
+        <div class="form-step">
+            <h3>📌 প্রথম ধাপ: আপনার যোগাযোগ তথ্য</h3>
+            <label class="required">WhatsApp নম্বর</label>
+            <input type="tel" name="whatsapp" pattern="[0-9]{11}" 
+                   placeholder="01XXXXXXXXX"
+                   required>
+            <div class="psychology-trigger">
+                "আপনার প্রতিযোগী ব্র্যান্ডগুলো ইতিমধ্যে তাদের অডিট রিপোর্ট সংগ্রহ করেছে!"
+            </div>
+        </div>
+
+        <!-- সেকশন ২: ব্যবসার তথ্য -->
+        <div class="form-step">
+            <h3>🔍 দ্বিতীয় ধাপ: আপনার ব্যবসার Hidden Potential</h3>
+            <label class="required">মাসে কত টাকা হারাচ্ছেন অদক্ষ মার্কেটিংয়ে?</label>
+            <select name="loss_amount" required>
+                <option value="10k">১০,০০০+ টাকা</option>
+                <option value="20k">২০,০০০+ টাকা</option>
+                <option value="30k">৩০,০০০+ টাকা</option>
+            </select>
+            <label class="required">প্রতিযোগী ব্র্যান্ডগুলোর নাম</label>
+            <input type="text" name="competitors" 
+                   placeholder="যেমন: গার্নিয়ার মেন, বেস্ট কেয়ার"
+                   required>
+        </div>
+
+        <!-- সেকশন ৩: গ্রাহক Mindset -->
+        <div class="form-step">
+            <h3>💡 তৃতীয় ধাপ: আপনার গ্রাহকদের Mindset</h3>
+            <label class="required">গ্রাহকরা কোনটি দেখলে ক্লিক করবে?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="trigger" value="confidence" required> 
+                "এই বিয়ার্ড অয়েলে ৯৭% বাংলাদেশি পুরুষের আত্মবিশ্বাস ↑"</label><br>
+                <label><input type="radio" name="trigger" value="local_pride"> 
+                "বাংলাদেশি চামড়ার জন্য বিশেষভাবে তৈরি"</label><br>
+                <label><input type="radio" name="trigger" value="social_proof"> 
+                "১০০০+ বার্বার শপের পছন্দ"</label>
+            </div>
+            <div class="psychology-trigger">
+                "আপনার প্রতিযোগীরা প্রতিদিন এই সাইকোলজি ব্যবহার করে বিক্রি বাড়াচ্ছে!"
+            </div>
+        </div>
+
+        <!-- সেকশন ৪: CTA -->
+        <div class="form-step">
+            <p style="text-align: center; font-size: 1.1em;">
+                ⏳ আজই সাবমিট করুন - দৈনিক মাত্র ৫টি অডিট করা হয়!<br>
+                <small>পরবর্তী স্লট: আগামী ২৪ ঘন্টায়</small>
+            </p>
+            <button type="submit">
+                আমার ফ্রি অডিট শুরু করুন →
+            </button>
+            <p style="text-align: center; color: #6c757d;">
+                ✔️ ১০০% গোপনীয়তা রক্ষা করা হয়<br>
+                ✔️ কোনো স্প্যাম/কোল না
+            </p>
+        </div>
+    </form>
+
+    <!-- JavaScript -->
+   <script>   
+    function handleSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.created === 1) {
+                document.body.innerHTML = getSuccessHTML(); // সম্পূর্ণ বডি কন্টেন্ট রিপ্লেস
+            }
+        })
+        .catch(error => alert("একটি সমস্যা হয়েছে!"));
+    }
+
+    const getSuccessHTML = () => {
+        return `
+        <!DOCTYPE html>
+        <html lang="bn">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>ধন্যবাদ! আপনার সোশ্যাল মিডিয়া অডিট রিকুয়েস্ট গ্রহণ করা হয়েছে</title>
+             <style>
+        :root {
+            --primary: #2A9D8F;
+            --secondary: #FF6B35;
+            --accent: #264653;
+        }
+
+        body {
+            font-family: 'Kalpurush', Arial, sans-serif;
+            line-height: 1.6;
+            background: #f8f9fa url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==');
+            color: #2b2d42;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .success-header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(42,157,143,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .success-header::after {
+            content: "✓";
+            position: absolute;
+            right: -30px;
+            top: -30px;
+            font-size: 120px;
+            opacity: 0.1;
+        }
+
+        .progress-container {
+            width: 80%;
+            height: 15px;
+            background: #e0e0e0;
+            border-radius: 8px;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            width: 75%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            animation: progress 2s ease-in-out;
+        }
+
+        @keyframes progress {
+            from { width: 5%; }
+            to { width: 75%; }
+        }
+
+        .success-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 5px 25px rgba(42,157,143,0.1);
+            text-align: left;
+        }
+
+        .detail-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .action-buttons {
+            display: grid;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 18px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(42,157,143,0.3);
+        }
+
+        .social-proof {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .proof-item {
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .whatsapp-cta {
+            background: #25D366;
+            color: white;
+            padding: 18px 30px;
+            border-radius: 50px;
+            margin: 25px 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-cta:hover {
+            transform: scale(1.05);
+        }
+
+        .brand-logos {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .brand-logos img {
+            height: 40px;
+            opacity: 0.7;
+        }
+    </style>
+        </head>
+        <body>
+            <div class="success-header">
+                <h1>🎉 আপনার সোশ্যাল মিডিয়া অডিট রিকুয়েস্ট গ্রহণ করা হয়েছে!</h1>
+                <p>আমাদের বিশেষজ্ঞ টিম ২৪ ঘন্টার মধ্যে আপনার ফেসবুক/ইনস্টাগ্রাম অ্যানালাইসিস পাঠাবে</p>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+
+            <div class="success-card">
+             <div class="success-card">
+        <!-- রেফারেন্স ডিটেইলস -->
+        <div class="detail-box">
+            <h3 style="margin:0 0 15px 0; color: var(--accent);">📌 আপনার রিকুয়েস্ট ডিটেইলস</h3>
+            <p style="margin:8px 0;"><strong>রেফারেন্স নং:</strong> #MG-2024-${Math.floor(Math.random()*9000+1000)}</p>
+            <p style="margin:8px 0;"><strong>জমার সময়:</strong> ${new Date().toLocaleString('bn-BD')}</p>
+            <p style="margin:8px 0;"><strong>রিপোর্ট প্রস্তুত হতে বাকি:</strong> ২৩ ঘন্টা ৫৪ মিনিট</p>
+        </div>
+            </div>
+
+      <a href="https://api.whatsapp.com/send/?phone=8801638447385&text=%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0+%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8+%E0%A6%A8%E0%A6%82%3A+%23MG-2024-1234%0A%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%95+%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B0+%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF+%E0%A6%9A%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F+%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A8&type=phone_number&app_absent=0" class="whatsapp-cta" style="display:inline-flex; align-items:center; padding:12px 25px; border-radius:30px; background:linear-gradient(135deg,#25D366,#128C7E); color:white; text-decoration:none; font-family:'Kalpurush',sans-serif; box-shadow:0 5px 15px rgba(18,140,126,0.3); transition:transform 0.3s, box-shadow 0.3s;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35" height="35" style="margin-right:15px; filter:drop-shadow(0 2px 3px rgba(0,0,0,0.2));">
+    <span style="font-size:15px; font-weight:600; text-shadow:0 1px 2px rgba(0,0,0,0.15);">হোয়াটসঅ্যাপে সরাসরি কানেক্ট করুন</span>
+</a>
+
+<!-- সোশ্যাল প্রুফ -->
+        <div class="social-proof">
+            <div class="proof-item">
+                <h4 style="margin:0; color: var(--primary);">১২৭+</h4>
+                <p style="margin:8px 0;">গ্রুমিং ব্র্যান্ড অডিটেড</p>
+            </div>
+            <div class="proof-item">
+                <h4 style="margin:0; color: var(--primary);">৪৩%</h4>
+                <p style="margin:8px 0;">গড় এনগেজমেন্ট বৃদ্ধি</p>
+            </div>
+            <div class="proof-item">
+                <h4 style="margin:0; color: var(--primary);">৯.৮/১০</h4>
+                <p style="margin:8px 0;">ক্লায়েন্ট সন্তুষ্টি</p>
+            </div>
+        </div>
+
+<div style="color: #6c757d; margin-top: 30px; font-size: 0.9em;">
+        <p>✔️ ১০০% ডাটা সিকিউরিটি (এসএসএল এনক্রিপ্টেড) | ✔️ স্প্যাম-মুক্ত গ্যারান্টি</p>
+        <p>© ২০২৪ মেন্স গ্রুমিং এক্সপার্টস | বাংলাদেশের SME ব্যবসায়ীদের জন্য প্রিমিয়াম সোশ্যাল মিডিয়া সলিউশন</p>
+    </div>
+        </body>
+        </html>
+        `;
+    };
+</script>
+</body>
+</html>
